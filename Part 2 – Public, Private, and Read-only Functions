@@ -1,0 +1,38 @@
+Part 2 – Public, Private, and Read-only Functions
+
+Clarity provides three types of functions, each with a specific execution context:
+
+Public functions
+
+Callable by users and other contracts
+
+Can modify blockchain state
+
+Must return a (response ...)
+
+Example:
+
+(define-public (increment (x uint))
+  (ok (+ x u1)))
+
+Private functions
+
+Callable only within the same contract
+
+Used for internal logic
+
+Can modify state
+
+(define-private (double (x uint))
+  (* x u2))
+
+Read-only functions
+
+Cannot modify state
+
+Free to call (no fees)
+
+Ideal for views and queries
+
+(define-read-only (get-balance (user principal))
+  (default-to u0 (map-get? balances user)))
