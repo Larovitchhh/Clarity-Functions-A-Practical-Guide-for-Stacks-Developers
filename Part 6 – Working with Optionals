@@ -1,0 +1,22 @@
+Part 6 – Working with Optionals
+
+Optionals are central to Clarity design.
+
+Key functions:
+
+some
+
+none
+
+is-some
+
+unwrap!
+
+default-to
+
+Example:
+
+(default-to u0 (map-get? balances tx-sender))
+
+
+This eliminates null-pointer-style bugs and forces developers to handle missing data consciously.
