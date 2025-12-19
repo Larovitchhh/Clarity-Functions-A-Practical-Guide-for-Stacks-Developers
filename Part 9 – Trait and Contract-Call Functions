@@ -1,0 +1,26 @@
+Part 9 – Trait and Contract-Call Functions
+
+Clarity supports composability without hidden side effects.
+
+Important functions:
+
+contract-call?
+
+as-contract
+
+use-trait
+
+impl-trait
+
+Example:
+
+(contract-call? other-contract transfer amount tx-sender)
+
+
+All cross-contract calls are:
+
+Explicit
+
+Typed
+
+Verifiable before execution
