@@ -1,0 +1,26 @@
+Part 7 – List and Tuple Functions
+
+Clarity provides rich tools for working with structured data:
+
+Lists
+
+map
+
+filter
+
+fold
+
+len
+
+Example:
+
+(map double my-list)
+
+Tuples
+
+Used heavily for structured storage:
+
+{ amount: uint, owner: principal }
+
+
+Tuples ensure schema-level clarity for on-chain data.
