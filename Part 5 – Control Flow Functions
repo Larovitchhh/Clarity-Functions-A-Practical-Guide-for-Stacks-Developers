@@ -1,0 +1,24 @@
+Part 5 – Control Flow Functions
+
+Clarity includes deterministic control-flow helpers:
+
+if
+
+begin
+
+match
+
+asserts!
+
+Example with asserts!:
+
+(asserts! (> amount u0) (err u400))
+
+
+If the assertion fails:
+
+The transaction halts
+
+State is reverted
+
+The error is returned
