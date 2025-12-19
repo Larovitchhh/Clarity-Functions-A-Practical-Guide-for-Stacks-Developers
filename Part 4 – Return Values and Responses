@@ -1,0 +1,17 @@
+Part 4 – Return Values and Responses
+
+All public functions must return a response:
+
+(ok value) → success
+
+(err value) → failure
+
+Example:
+
+(define-public (withdraw (amount uint))
+  (if (>= (stx-get-balance tx-sender) amount)
+      (ok amount)
+      (err u401)))
+
+
+This makes error handling explicit and auditable, unlike Solidity’s silent reverts.
