@@ -1,0 +1,23 @@
+Part 10 – Why Clarity Functions Are Safer by Design
+
+Clarity functions embody a different philosophy:
+
+No reentrancy
+
+No hidden loops
+
+No gas surprises
+
+No runtime ambiguity
+
+This makes Clarity especially suitable for:
+
+DeFi protocols
+
+Identity systems
+
+DAOs
+
+Reputation and minting logic (like OnchainKMS)
+
+Mastering Clarity functions means writing contracts that are boring in execution—but powerful in guarantees, which is exactly what blockchains need
