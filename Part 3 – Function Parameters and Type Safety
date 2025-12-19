@@ -1,0 +1,25 @@
+
+
+Clarity enforces strict static typing. Every parameter must declare its type explicitly.
+
+Common parameter types:
+
+uint, int
+
+bool
+
+principal
+
+buff
+
+optional, response
+
+tuples and lists
+
+This prevents:
+
+Type confusion
+
+Unexpected runtime errors
+
+Hidden execution paths
