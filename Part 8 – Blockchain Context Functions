@@ -1,0 +1,19 @@
+Part 8 – Blockchain Context Functions
+
+Clarity exposes blockchain state safely:
+
+tx-sender
+
+block-height
+
+contract-caller
+
+stx-get-balance
+
+Example:
+
+(define-read-only (who-called)
+  tx-sender)
+
+
+Because Clarity is interpreted, these values are known before execution, improving security and predictability.
